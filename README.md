@@ -55,7 +55,7 @@ streamlit run app.py
 
 ```
 ## ⚙️ Example queries
-• "Assign Reader role from user1 to user2"
-• "Is the application slower since last deployment?"
+* "Assign Reader role from user1 to user2"
+* "Is the application slower since last deployment?"
 
 
