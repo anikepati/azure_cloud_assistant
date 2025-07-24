@@ -17,6 +17,18 @@ CloudCopilot is an agentic GenAI assistant that automates Azure Identity & Acces
 
 ---
 
+✅ Why Use VectorDB + RAG for Anomaly Detection?
+🔍 What Problem It Solves:
+App Insights gives you metric snapshots every N minutes.
+
+You want to compare new data against past patterns (e.g., same time yesterday, same route after deploys).
+
+Instead of keeping raw JSON or time series only, you:
+→ Embed metric + log + context as vectors
+→ Store them in ChromaDB
+→ Use LLM + similarity search to retrieve context for anomaly explanations.
+
+
 ## ⚙️ Quick Setup (using [`uv`](https://github.com/astral-sh/uv))
 
 ```bash
@@ -46,17 +58,4 @@ streamlit run app.py
 • "Assign Reader role from user1 to user2"
 • "Is the application slower since last deployment?"
 
-## 📂 Folder Structure
-.
-├── app.py                   # Streamlit UI
-├── .env                     # environment variables
-├── agents/
-│   ├── iam_agent.py
-│   └── insights_agent.py
-├── core/
-│   ├── agent_router.py
-│   └── rag_memory.py
-├── utils/
-│   └── function_schema.py
-├── requirements.txt
-└── README.md
+
