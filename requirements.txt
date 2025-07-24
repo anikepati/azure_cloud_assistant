@@ -1,0 +1,8 @@
+openai
+streamlit
+azure-identity
+msgraph-core
+requests
+chromadb
+schedule
+numpy
